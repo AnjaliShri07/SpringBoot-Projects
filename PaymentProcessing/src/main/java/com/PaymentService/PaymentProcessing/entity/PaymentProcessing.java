@@ -1,20 +1,25 @@
 package com.PaymentService.PaymentProcessing.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-public class Payment {
+public class PaymentProcessing {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long paymentId;
     private Double amount;
     private String currency;
     private String status = "PENDING";
+
+    public PaymentProcessing() {
+    }
+
+    public PaymentProcessing(Long paymentId, Double amount, String currency, String status) {
+        this.paymentId = paymentId;
+        this.amount = amount;
+        this.currency = currency;
+        this.status = status;
+    }
 
     public Long getPaymentId() {
         return paymentId;
