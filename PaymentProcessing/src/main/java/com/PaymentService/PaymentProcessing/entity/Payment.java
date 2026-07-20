@@ -3,7 +3,7 @@ package com.PaymentService.PaymentProcessing.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class PaymentProcessing {
+public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long paymentId;
@@ -11,10 +11,10 @@ public class PaymentProcessing {
     private String currency;
     private String status = "PENDING";
 
-    public PaymentProcessing() {
+    public Payment() {
     }
 
-    public PaymentProcessing(Long paymentId, Double amount, String currency, String status) {
+    public Payment(Long paymentId, Double amount, String currency, String status) {
         this.paymentId = paymentId;
         this.amount = amount;
         this.currency = currency;
