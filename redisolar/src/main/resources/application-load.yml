@@ -1,0 +1,10 @@
+# Profile used by: java -jar target/redisolar-1.0.jar --spring.profiles.active=load
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+
+redisolar:
+  load:
+    flush: false
+    # filename: /path/to/sites.json   # defaults to the sites.json bundled in the jar

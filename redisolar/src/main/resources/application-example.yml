@@ -1,0 +1,5 @@
+# Profile used by: java -jar target/redisolar-1.0.jar --spring.profiles.active=example --redisolar.example=hello
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
