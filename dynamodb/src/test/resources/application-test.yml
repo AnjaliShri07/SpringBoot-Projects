@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dynamodb
+
+server:
+  port: 8080
+
+aws:
+  dynamodb:
+    endpoint: http://localhost:8080
+    access-key: dummy
+    secret-key: dummy
+    table-prefix: test
+    table-suffix: table
+
+
+

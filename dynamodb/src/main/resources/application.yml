@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: dynamodb
+
+server:
+  port: 8080
+
+spring-doc:
+  api-doc:
+    path: /api-docs
+  swagger-ui: /swagger-ui.html
+
+aws:
+  dynamodb:
+    endpoint: https://dynamodb.us-east-1.amazonaws.com
+    access-key: AKIAQ4J5X53DBQIAIPJS
+    secret-key: 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
+    table-prefix: aws-dynamodb
+    table-suffix: dev
+
+
+
